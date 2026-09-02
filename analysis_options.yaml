@@ -1,0 +1,124 @@
+# ToolCab - Lint Configuration
+# This file configures static analysis for the project.
+# Reference: https://dart.dev/guides/language/analysis-options
+
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "build/**"
+    - ".dart_tool/**"
+  language:
+    strict-casts: true
+
+linter:
+  rules:
+    # Best Practices
+    - always_declare_return_types
+    - avoid_dynamic_calls
+    - avoid_empty_else
+    - avoid_init_to_null
+    - avoid_print
+    - avoid_type_to_string
+    - avoid_unnecessary_containers
+    - avoid_unused_constructor_parameters
+    - avoid_void_async
+    - await_only_futures
+    - cancel_subscriptions
+    - close_sinks
+    - control_flow_in_finally
+    - curly_braces_in_flow_control_structures
+    - deprecated_consistency
+    - directives_ordering
+    - empty_catches
+    - empty_statements
+    - eol_at_end_of_file
+    - file_names
+    - hash_and_equals
+    - implementation_imports
+    - library_names
+    - library_prefixes
+    - no_duplicate_case_values
+    - no_logic_in_create_state
+    - no_self_assignments
+    - null_closures
+    - only_throw_errors
+    - overridden_fields
+    - package_names
+    - prefer_adjacent_string_concatenation
+    - prefer_asserts_in_initializer_lists
+    - prefer_asserts_with_message
+    - prefer_collection_literals
+    - prefer_conditional_assignment
+    - prefer_const_constructors
+    - prefer_const_constructors_in_immutables
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+    - prefer_contains
+    - prefer_final_fields
+    - prefer_final_locals
+    - prefer_foreach
+    - prefer_function_declarations_over_variables
+    - prefer_generic_function_type_aliases
+    - prefer_if_null_operators
+    - prefer_initializing_formals
+    - prefer_inlined_adds
+    - prefer_int_literals
+    - prefer_interpolation_to_compose_strings
+    - prefer_is_empty
+    - prefer_is_not_empty
+    - prefer_iterable_whereType
+    - prefer_mixin
+    - prefer_null_aware_method_calls
+    - prefer_null_aware_operators
+    - prefer_relative_imports
+    - prefer_single_quotes
+    - prefer_spread_collections
+    - prefer_typing_uninitialized_variables
+    - prefer_void_to_null
+    - recursive_getters
+    - require_trailing_commas
+    - sized_box_for_whitespace
+    - slash_for_doc_comments
+    - sort_child_properties_last
+    - sort_constructors_first
+    - sort_unnamed_constructors_first
+    - throw_in_finally
+    - tighten_type_of_initializing_formals
+    - type_annotate_public_apis
+    - unawaited_futures
+    - unnecessary_async
+    - unnecessary_await_in_return
+    - unnecessary_brace_in_string_interps
+    - unnecessary_const
+    - unnecessary_constructor_name
+    - unnecessary_getters_setters
+    - unnecessary_lambdas
+    - unnecessary_late
+    - unnecessary_new
+    - unnecessary_null_aware_assignments
+    - unnecessary_null_checks
+    - unnecessary_null_in_if_null_operators
+    - unnecessary_this
+    - unnecessary_string_escapes
+    - unnecessary_string_interpolations
+    - unrelated_type_equality_checks
+    - use_build_context_synchronously
+    - use_colored_box
+    - use_decorated_box
+    - use_full_hex_values_for_flutter_colors
+    - use_function_type_syntax_for_parameters
+    - use_key_in_widget_constructors
+    - use_late_for_private_fields_and_variables
+    - use_named_constants
+    - use_raw_strings
+    - use_rethrow_when_possible
+    - use_setters_to_change_properties
+    - use_string_buffers
+    - use_super_parameters
+    - use_test_throws_matchers
+    - use_to_and_as_if_applicable
+    - valid_regexps
+    - void_checks
